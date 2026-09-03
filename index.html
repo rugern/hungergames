@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hunger Games — Seek, Sneak, Eat, Repeat</title>
+  <meta name="description" content="Team Hunger Games at Internasjonal Gjemsel: 2 Hidden 2 Seek — hunting the Hosts and the delicacies of the Netherlands.">
+  <meta property="og:title" content="Hunger Games">
+  <meta property="og:description" content="Seek, Sneak, Eat, Repeat — Internasjonal Gjemsel: 2 Hidden 2 Seek">
+  <meta property="og:image" content="https://hungergames.ferda.fun/assets/logo.jpg">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="topbar-title">HUNGER GAMES</span>
+    <nav class="lang-picker" aria-label="Language">
+      <button id="lang-en" data-lang="en" aria-label="English">🇬🇧 EN</button>
+      <button id="lang-nl" data-lang="nl" aria-label="Nederlands">🇳🇱 NL</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="logo" src="assets/logo.jpg" alt="Hunger Games team logo — Seek, Sneak, Eat, Repeat" width="1254" height="1254">
+      <p class="tagline">
+        <span class="w1" data-i18n="tag1">Seek.</span>
+        <span class="w2" data-i18n="tag2">Sneak.</span>
+        <span class="w3" data-i18n="tag3">Eat.</span>
+        <span class="w4" data-i18n="tag4">Repeat.</span>
+      </p>
+      <p class="subtitle" data-i18n="subtitle">Internasjonal Gjemsel: 2 Hidden 2 Seek · The Netherlands 2026</p>
+      <p class="mission" data-i18n="mission">We hunt the hiding Hosts. We seek the delicacies of the Netherlands. We are always hungry.</p>
+
+      <div class="anthem">
+        <p class="anthem-label" data-i18n="anthem">🎵 Official team anthem: “Found You There”</p>
+        <audio controls preload="none" src="assets/found_you_there.mp3"></audio>
+      </div>
+    </section>
+
+    <section class="feed-section">
+      <h2 class="feed-title" data-i18n="feedTitle">The Meme Feed</h2>
+      <p class="feed-hint" data-i18n="feedHint">Fresh propaganda from the arena, newest first.</p>
+      <div id="feed" class="feed" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">Made with hunger by team Hunger Games 🍟</p>
+  </footer>
+
+  <script src="feed.js"></script>
+</body>
+</html>
