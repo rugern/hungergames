@@ -13,6 +13,14 @@ const STRINGS = {
     feedHint: "Fresh propaganda from the arena, newest first.",
     footer: "Made with hunger by team Hunger Games 🍟",
     feedError: "The memes could not be loaded. The Hosts are suspected of sabotage.",
+    tabMemes: "Memes",
+    tabTour: "Tour",
+    tourTitle: "World Tour 2026",
+    tourHint: "Catch the sensation live. Snacks are not guaranteed to survive.",
+    statusPlayed: "PLAYED",
+    statusSoldout: "SOLD OUT",
+    statusCancelled: "CANCELLED",
+    statusFinale: "THE BIG ONE",
   },
   nl: {
     tag1: "Zoek.",
@@ -26,10 +34,19 @@ const STRINGS = {
     feedHint: "Verse propaganda uit de arena, nieuwste eerst.",
     footer: "Gemaakt met honger door team Hunger Games 🍟",
     feedError: "De memes konden niet geladen worden. De Hosts worden verdacht van sabotage.",
+    tabMemes: "Memes",
+    tabTour: "Tournee",
+    tourTitle: "Wereldtournee 2026",
+    tourHint: "Zie de sensatie live. Snacks overleven mogelijk niet.",
+    statusPlayed: "GESPEELD",
+    statusSoldout: "UITVERKOCHT",
+    statusCancelled: "GEANNULEERD",
+    statusFinale: "DE GROTE FINALE",
   },
 };
 
 let memes = [];
+let tour = [];
 
 function currentLang() {
   const stored = localStorage.getItem("lang");
@@ -49,6 +66,17 @@ function setLang(lang) {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
   renderFeed(lang);
+  renderTour(lang);
+}
+
+function setTab(tab) {
+  document.getElementById("view-memes").hidden = tab !== "memes";
+  document.getElementById("view-tour").hidden = tab !== "tour";
+  document.querySelectorAll(".tabs button").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tab);
+  });
+  history.replaceState(null, "", tab === "tour" ? "#tour" : "#memes");
+  window.scrollTo(0, 0);
 }
 
 function formatDate(iso, lang) {
@@ -102,14 +130,68 @@ function renderFeed(lang) {
   }
 }
 
+function renderTour(lang) {
+  const list = document.getElementById("tour");
+  list.innerHTML = "";
+  const today = new Date().toISOString().slice(0, 10);
+  for (const stop of tour) {
+    const row = document.createElement("article");
+    const played = stop.date < today && stop.status !== "finale";
+    row.className = "stop" + (played ? " played" : "") + (stop.status === "finale" ? " finale" : "");
+
+    const d = new Date(stop.date + "T12:00:00");
+    const dateBox = document.createElement("div");
+    dateBox.className = "stop-date";
+    dateBox.innerHTML =
+      "<span class='stop-day'>" + d.getDate() + "</span><span class='stop-month'>" +
+      d.toLocaleDateString(lang === "nl" ? "nl-NL" : "en-GB", { month: "short" }) + "</span>";
+
+    const info = document.createElement("div");
+    info.className = "stop-info";
+    const city = document.createElement("p");
+    city.className = "stop-city";
+    city.textContent = stop.city[lang];
+    const venue = document.createElement("p");
+    venue.className = "stop-venue";
+    venue.textContent = stop.venue[lang];
+    const note = document.createElement("p");
+    note.className = "stop-note";
+    note.textContent = stop.note[lang];
+    info.append(city, venue, note);
+
+    row.append(dateBox, info);
+
+    const badgeKey = stop.status
+      ? { soldout: "statusSoldout", cancelled: "statusCancelled", finale: "statusFinale" }[stop.status]
+      : played ? "statusPlayed" : null;
+    if (badgeKey) {
+      const badge = document.createElement("span");
+      badge.className = "stop-badge " + (stop.status || "played");
+      badge.textContent = STRINGS[lang][badgeKey];
+      row.appendChild(badge);
+    }
+
+    list.appendChild(row);
+  }
+}
+
 document.querySelectorAll(".lang-picker button").forEach((btn) => {
   btn.addEventListener("click", () => setLang(btn.dataset.lang));
 });
 
-fetch("memes.json")
-  .then((res) => res.json())
-  .then((data) => {
-    memes = data.sort((a, b) => b.date.localeCompare(a.date));
+document.querySelectorAll(".tabs button").forEach((btn) => {
+  btn.addEventListener("click", () => setTab(btn.dataset.tab));
+});
+
+setTab(location.hash === "#tour" ? "tour" : "memes");
+
+Promise.all([
+  fetch("memes.json").then((res) => res.json()),
+  fetch("tour.json").then((res) => res.json()),
+])
+  .then(([memeData, tourData]) => {
+    memes = memeData.sort((a, b) => b.date.localeCompare(a.date));
+    tour = tourData.sort((a, b) => a.date.localeCompare(b.date));
     setLang(currentLang());
   })
   .catch(() => {

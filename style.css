@@ -31,13 +31,39 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.6rem 1rem;
   background: rgba(16, 13, 8, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(217, 164, 65, 0.35);
+}
+
+.topbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem 0.4rem;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs button {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.55rem 0;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  color: var(--gold-bright);
+  border-bottom-color: var(--gold);
 }
 
 .topbar-title {
@@ -184,6 +210,84 @@ main {
   color: var(--muted);
   font-size: 0.8rem;
 }
+
+/* ---- Tour ---- */
+.tour-section { margin-top: 1.5rem; }
+
+.tour { display: grid; gap: 0.75rem; }
+
+.stop {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--bg-card);
+  border: 1px solid rgba(217, 164, 65, 0.25);
+  border-radius: var(--radius);
+  padding: 0.75rem 0.9rem;
+}
+
+.stop.played { opacity: 0.55; }
+
+.stop.finale {
+  border-color: var(--gold);
+  box-shadow: 0 0 14px rgba(217, 164, 65, 0.35);
+}
+
+.stop-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 3rem;
+  color: var(--gold-bright);
+}
+
+.stop-day {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stop-month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.stop-info { flex: 1; min-width: 0; }
+
+.stop-city {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.stop-venue {
+  margin: 0.05rem 0 0;
+  color: var(--cream);
+  font-size: 0.85rem;
+}
+
+.stop-note {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.stop-badge {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.stop-badge.played { background: rgba(179, 162, 132, 0.2); color: var(--muted); }
+.stop-badge.soldout { background: rgba(192, 57, 43, 0.25); color: #e58a7e; }
+.stop-badge.cancelled { background: rgba(179, 162, 132, 0.15); color: var(--muted); text-decoration: line-through; }
+.stop-badge.finale { background: var(--gold); color: #1a1408; }
 
 /* ---- Footer ---- */
 footer {
