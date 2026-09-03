@@ -23,6 +23,7 @@ The routine update is: save the new image to `assets/memes/`, append an entry to
 - The page is viewed primarily on phones — every design change must be mobile-first (single column, big touch targets); desktop just gets more breathing room.
 
 - The site is bilingual English/Dutch with a client-side language picker. All user-supplied content arrives in Norwegian/English; translate it into **both** English and Dutch yourself. Translations are for fun — looseness and pun-preservation beat accuracy.
-- A meme entry is an image **or** a YouTube video, plus a bilingual caption and a date.
+- A meme entry has a unique kebab-case `id` (anchor links use `#news-<id>`), a bilingual caption, a date, and one of three types: `image` (`src`), `youtube` (`yt` video id), or `video` (`src` + `poster` for a self-hosted mp4).
+- Self-hosted video is allowed for special clips: re-encode with `ffmpeg -c:v libx264 -crf 26 -preset slow -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k` and keep the result under ~15MB; extract a non-black poster frame. Long or large videos still go to YouTube; never commit an original/uncompressed video file.
 - Naming joke: internally (team, repo, code, `memes.json`) they are "memes", but ALL visitor-facing text calls them "news" (EN) / "nieuws" (NL) — the fan page pretends to report news about the pop sensation. Never let the word "meme" appear on the rendered page.
 - Keep media small: compress images; audio a few MB; never commit video files.

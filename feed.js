@@ -21,6 +21,8 @@ const STRINGS = {
     statusSoldout: "SOLD OUT",
     statusCancelled: "CANCELLED",
     statusFinale: "THE BIG ONE",
+    share: "🔗 Copy link",
+    copied: "✅ Copied!",
   },
   nl: {
     tag1: "Zoek.",
@@ -42,6 +44,8 @@ const STRINGS = {
     statusSoldout: "UITVERKOCHT",
     statusCancelled: "GEANNULEERD",
     statusFinale: "DE GROTE FINALE",
+    share: "🔗 Link kopiëren",
+    copied: "✅ Gekopieerd!",
   },
 };
 
@@ -94,18 +98,27 @@ function renderFeed(lang) {
   for (const meme of memes) {
     const card = document.createElement("article");
     card.className = "meme";
+    card.id = "news-" + meme.id;
 
     if (meme.type === "youtube") {
       const wrap = document.createElement("div");
       wrap.className = "yt";
       const iframe = document.createElement("iframe");
-      iframe.src = "https://www.youtube-nocookie.com/embed/" + meme.id;
+      iframe.src = "https://www.youtube-nocookie.com/embed/" + meme.yt;
       iframe.loading = "lazy";
       iframe.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share";
       iframe.allowFullscreen = true;
       iframe.title = meme.caption[lang] || "";
       wrap.appendChild(iframe);
       card.appendChild(wrap);
+    } else if (meme.type === "video") {
+      const video = document.createElement("video");
+      video.src = meme.src;
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = "metadata";
+      if (meme.poster) video.poster = meme.poster;
+      card.appendChild(video);
     } else {
       const img = document.createElement("img");
       img.src = meme.src;
@@ -119,11 +132,24 @@ function renderFeed(lang) {
     const caption = document.createElement("p");
     caption.className = "meme-caption";
     caption.textContent = meme.caption[lang] || meme.caption.en || "";
+    const footer = document.createElement("div");
+    footer.className = "meme-footer";
     const date = document.createElement("p");
     date.className = "meme-date";
     date.textContent = formatDate(meme.date, lang);
+    const shareBtn = document.createElement("button");
+    shareBtn.className = "share-btn";
+    shareBtn.textContent = STRINGS[lang].share;
+    shareBtn.addEventListener("click", () => {
+      const url = location.origin + location.pathname + "#news-" + meme.id;
+      navigator.clipboard.writeText(url).then(() => {
+        shareBtn.textContent = STRINGS[lang].copied;
+        setTimeout(() => { shareBtn.textContent = STRINGS[lang].share; }, 1500);
+      });
+    });
+    footer.append(date, shareBtn);
     body.appendChild(caption);
-    body.appendChild(date);
+    body.appendChild(footer);
     card.appendChild(body);
 
     feed.appendChild(card);
@@ -183,6 +209,7 @@ document.querySelectorAll(".tabs button").forEach((btn) => {
   btn.addEventListener("click", () => setTab(btn.dataset.tab));
 });
 
+const deepLink = location.hash.startsWith("#news-") ? location.hash.slice(1) : null;
 setTab(location.hash === "#tour" ? "tour" : "memes");
 
 Promise.all([
@@ -193,6 +220,13 @@ Promise.all([
     memes = memeData.sort((a, b) => b.date.localeCompare(a.date));
     tour = tourData.sort((a, b) => b.date.localeCompare(a.date));
     setLang(currentLang());
+    if (deepLink) {
+      const target = document.getElementById(deepLink);
+      if (target) {
+        history.replaceState(null, "", "#" + deepLink);
+        target.scrollIntoView({ block: "start" });
+      }
+    }
   })
   .catch(() => {
     document.getElementById("feed").textContent = STRINGS[currentLang()].feedError;

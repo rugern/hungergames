@@ -1,65 +1,83 @@
 [
   {
+    "id": "introducing-hunger-games",
+    "type": "video",
+    "date": "2026-09-03",
+    "src": "assets/memes/introducing-hunger-games.mp4",
+    "poster": "assets/memes/introducing-hunger-games-poster.jpg",
+    "caption": {
+      "en": "INTRODUCING: HUNGER GAMES 📣 The official announcement. Netherlands, the sensation is on its way.",
+      "nl": "INTRODUCING: HUNGER GAMES 📣 De officiële aankondiging. Nederland, de sensatie is onderweg."
+    }
+  },
+  {
+    "id": "gonna-drum-our-tum",
     "type": "youtube",
-    "id": "YjDj4LRwRpg",
     "date": "2026-09-03",
     "caption": {
       "en": "“Gonna Drum our Tum” ft. Bueno Margarita — official music video 🥁",
       "nl": "“Gonna Drum our Tum” ft. Bueno Margarita — officiële videoclip 🥁"
-    }
+    },
+    "yt": "YjDj4LRwRpg"
   },
   {
+    "id": "snack-on-titan",
     "type": "youtube",
-    "id": "dK0D4Q5cvnc",
     "date": "2026-09-03",
     "caption": {
       "en": "“Snack on Titan” ft. Feelin’ Peckish — official music video 🎬",
       "nl": "“Snack on Titan” ft. Feelin’ Peckish — officiële videoclip 🎬"
-    }
+    },
+    "yt": "dK0D4Q5cvnc"
   },
   {
+    "id": "winner-winner",
     "type": "image",
-    "src": "assets/memes/winner-winner.jpg",
     "date": "2026-08-23",
     "caption": {
       "en": "Winner winner, chicken dinner. The bananas have entered the arena. 🍌",
       "nl": "Winnaar winnaar, kip als diner. De bananen zijn de arena binnengekomen. 🍌"
-    }
+    },
+    "src": "assets/memes/winner-winner.jpg"
   },
   {
+    "id": "flavour-of-the-odds",
     "type": "image",
-    "src": "assets/memes/flavour-of-the-odds.jpg",
     "date": "2026-08-22",
     "caption": {
       "en": "May the odds be ever in your flavour.",
       "nl": "Moge de kansen altijd in je smaak zijn."
-    }
+    },
+    "src": "assets/memes/flavour-of-the-odds.jpg"
   },
   {
+    "id": "food-forecast",
     "type": "image",
-    "src": "assets/memes/food-forecast.jpg",
     "date": "2026-08-22",
     "caption": {
       "en": "Weather forecast for the Netherlands: 100% chance of food.",
       "nl": "Weerbericht voor Nederland: 100% kans op eten."
-    }
+    },
+    "src": "assets/memes/food-forecast.jpg"
   },
   {
+    "id": "raining-in-amsterdam",
     "type": "image",
-    "src": "assets/memes/raining-in-amsterdam.jpg",
     "date": "2026-08-22",
     "caption": {
       "en": "It is always raining somewhere in Amsterdam. Hopefully bitterballen.",
       "nl": "Het regent altijd wel ergens in Amsterdam. Hopelijk bitterballen."
-    }
+    },
+    "src": "assets/memes/raining-in-amsterdam.jpg"
   },
   {
+    "id": "manifesting-snacks",
     "type": "image",
-    "src": "assets/memes/manifesting-snacks.jpg",
     "date": "2026-08-19",
     "caption": {
       "en": "Training montage: manifesting the snack rain. It is working.",
       "nl": "Trainingsmontage: de snackregen manifesteren. Het werkt."
-    }
+    },
+    "src": "assets/memes/manifesting-snacks.jpg"
   }
 ]
