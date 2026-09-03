@@ -191,7 +191,7 @@ Promise.all([
 ])
   .then(([memeData, tourData]) => {
     memes = memeData.sort((a, b) => b.date.localeCompare(a.date));
-    tour = tourData.sort((a, b) => a.date.localeCompare(b.date));
+    tour = tourData.sort((a, b) => b.date.localeCompare(a.date));
     setLang(currentLang());
   })
   .catch(() => {
