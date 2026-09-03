@@ -94,19 +94,19 @@
   {
     "date": "2026-09-04",
     "city": { "en": "Amsterdam 🇳🇱", "nl": "Amsterdam 🇳🇱" },
-    "venue": { "en": "Night one", "nl": "Avond één" },
+    "venue": { "en": "Arrival & tasting tour", "nl": "Aankomst & proeverij" },
     "note": {
-      "en": "The hunt begins.",
-      "nl": "De jacht begint."
+      "en": "We arrive. We eat. We scout.",
+      "nl": "We komen aan. We eten. We verkennen."
     }
   },
   {
     "date": "2026-09-05",
     "city": { "en": "Amsterdam 🇳🇱", "nl": "Amsterdam 🇳🇱" },
-    "venue": { "en": "Night two", "nl": "Avond twee" },
+    "venue": { "en": "Night one", "nl": "Avond één" },
     "note": {
-      "en": "Still hungry.",
-      "nl": "Nog steeds honger."
+      "en": "The hunt begins.",
+      "nl": "De jacht begint."
     }
   },
   {
