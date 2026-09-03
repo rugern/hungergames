@@ -9,11 +9,11 @@ const STRINGS = {
     subtitle: "Internasjonal Gjemsel: 2 Hidden 2 Seek · The Netherlands 2026",
     mission: "We hunt the hiding Hosts. We seek the delicacies of the Netherlands. We are always hungry.",
     anthem: "🎵 Official team anthem: “Found You There”",
-    feedTitle: "The Meme Feed",
-    feedHint: "Fresh propaganda from the arena, newest first.",
+    feedTitle: "Breaking News",
+    feedHint: "Fresh reports from the arena, newest first.",
     footer: "Made with hunger by team Hunger Games 🍟",
-    feedError: "The memes could not be loaded. The Hosts are suspected of sabotage.",
-    tabMemes: "Memes",
+    feedError: "The news could not be loaded. The Hosts are suspected of sabotage.",
+    tabMemes: "News",
     tabTour: "Tour",
     tourTitle: "World Tour 2026",
     tourHint: "Catch the sensation live. Snacks are not guaranteed to survive.",
@@ -30,11 +30,11 @@ const STRINGS = {
     subtitle: "Internasjonal Gjemsel: 2 Hidden 2 Seek · Nederland 2026",
     mission: "Wij jagen op de verstopte Hosts. Wij zoeken de lekkernijen van Nederland. Wij hebben altijd honger.",
     anthem: "🎵 Officieel teamvolkslied: “Found You There”",
-    feedTitle: "De Memestroom",
-    feedHint: "Verse propaganda uit de arena, nieuwste eerst.",
+    feedTitle: "Laatste Nieuws",
+    feedHint: "Verse berichten uit de arena, nieuwste eerst.",
     footer: "Gemaakt met honger door team Hunger Games 🍟",
-    feedError: "De memes konden niet geladen worden. De Hosts worden verdacht van sabotage.",
-    tabMemes: "Memes",
+    feedError: "Het nieuws kon niet geladen worden. De Hosts worden verdacht van sabotage.",
+    tabMemes: "Nieuws",
     tabTour: "Tournee",
     tourTitle: "Wereldtournee 2026",
     tourHint: "Zie de sensatie live. Snacks overleven mogelijk niet.",
@@ -75,7 +75,7 @@ function setTab(tab) {
   document.querySelectorAll(".tabs button").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.tab === tab);
   });
-  history.replaceState(null, "", tab === "tour" ? "#tour" : "#memes");
+  history.replaceState(null, "", tab === "tour" ? "#tour" : "#news");
   window.scrollTo(0, 0);
 }
 

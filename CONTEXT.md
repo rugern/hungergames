@@ -9,6 +9,6 @@
 - **The team** — The group participating as "Hunger Games", running this fan page. They cosplay as an international pop sensation — hence the song, the music videos, and the world tour.
 - **Tour** — The (fictional) 2026 world-tour program of the pop sensation Hunger Games, listed on the fan page: varied shows across countries and dates.
 - **Fan page** — This site: ties together the team's logo, images, video, and song, and tracks the memes the team posts. Hosted at hungergames.ferda.fun.
-- **Meme** — An image or video (YouTube) with a caption and date, posted by the team during the game. Memes appear on the fan page as a reverse-chronological feed (the **meme feed**). Captions exist in both site languages (English and Dutch).
+- **Meme** — An image or video (YouTube) with a caption and date, posted by the team during the game. Memes appear on the fan page as a reverse-chronological feed (the **meme feed**). Captions exist in both site languages (English and Dutch). "Meme" is the team's internal word; on the public page memes are always presented as **News** — part of the joke that a fan page reports news about the pop sensation. Visitor-facing text says "news"; the team and this repo keep saying "memes".
 - **Language picker** — The site is bilingual English/Dutch; visitors toggle between the two. Source content arrives in Norwegian/English and is translated (for fun, not accuracy) into both site languages.
 - **Delicacies** — Dutch food/treats the team seeks during the trip; half of the Hunger Games pun.

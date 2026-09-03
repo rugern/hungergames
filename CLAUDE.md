@@ -24,4 +24,5 @@ The routine update is: save the new image to `assets/memes/`, append an entry to
 
 - The site is bilingual English/Dutch with a client-side language picker. All user-supplied content arrives in Norwegian/English; translate it into **both** English and Dutch yourself. Translations are for fun — looseness and pun-preservation beat accuracy.
 - A meme entry is an image **or** a YouTube video, plus a bilingual caption and a date.
+- Naming joke: internally (team, repo, code, `memes.json`) they are "memes", but ALL visitor-facing text calls them "news" (EN) / "nieuws" (NL) — the fan page pretends to report news about the pop sensation. Never let the word "meme" appear on the rendered page.
 - Keep media small: compress images; audio a few MB; never commit video files.
