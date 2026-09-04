@@ -5,7 +5,7 @@
 - **Internasjonal Gjemsel** — A recurring (multi-year) hide-and-seek game series the team participates in. Each iteration has its own subtitle.
 - **2 Hidden 2 Seek** — This year's (2026) iteration of Internasjonal Gjemsel, taking place in the Netherlands.
 - **Hunger Games** — The team's name (and theme) for this iteration. The pun: they are *hunting* the hiding team while *seeking* delicacies in the Netherlands. The fan page carries the same name.
-- **Hosts** — The game hosts, who are also the hiding team being hunted.
+- **Hosts** — The game hosts, who are also the hiding team being hunted. Visitor-facing text calls them "the hiding team" (EN) / "het verstopte team" (NL), never "hosts".
 - **The team** — The group participating as "Hunger Games", running this fan page. They cosplay as an international pop sensation — hence the song, the music videos, and the world tour.
 - **Tour** — The (fictional) 2026 world-tour program of the pop sensation Hunger Games, listed on the fan page: varied shows across countries and dates.
 - **Fan page** — This site: ties together the team's logo, images, video, and song, and tracks the memes the team posts. Hosted at hungergames.ferda.fun.
