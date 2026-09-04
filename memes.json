@@ -1,5 +1,16 @@
 [
   {
+    "id": "david-gouda-sesh",
+    "type": "video",
+    "date": "2026-09-04",
+    "src": "assets/memes/david-gouda-sesh.mp4",
+    "poster": "assets/memes/david-gouda-sesh-poster.jpg",
+    "caption": {
+      "en": "Met up with our friend DJ David Gouda for a quick sesh before flying 🎧🧀✈️",
+      "nl": "Nog even een snelle sessie met onze vriend DJ David Gouda voor we het vliegtuig pakken 🎧🧀✈️"
+    }
+  },
+  {
     "id": "we-will-not-be-stopped",
     "type": "image",
     "date": "2026-09-04",
