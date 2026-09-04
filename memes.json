@@ -1,5 +1,15 @@
 [
   {
+    "id": "bitterballen",
+    "type": "image",
+    "date": "2026-09-04",
+    "src": "assets/memes/bitterballen.jpg",
+    "caption": {
+      "en": "Enjoying the local delicacies and prepping for the game #bitterballen 🍺",
+      "nl": "Genieten van de lokale lekkernijen en klaarstomen voor het spel #bitterballen 🍺"
+    }
+  },
+  {
     "id": "chaos-at-schiphol",
     "type": "image",
     "date": "2026-09-04",
