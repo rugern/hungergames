@@ -1,5 +1,15 @@
 [
   {
+    "id": "team-in-position",
+    "type": "image",
+    "date": "2026-09-04",
+    "src": "assets/memes/team-in-position.jpg",
+    "caption": {
+      "en": "After an arduous journey and a big crowd to dodge, the entire team is finally in position 🕶️",
+      "nl": "Na een zware reis en een flinke menigte ontweken te hebben, is het hele team eindelijk in positie 🕶️"
+    }
+  },
+  {
     "id": "bitterballen",
     "type": "image",
     "date": "2026-09-04",
