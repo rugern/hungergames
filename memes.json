@@ -1,5 +1,15 @@
 [
   {
+    "id": "we-will-not-be-stopped",
+    "type": "image",
+    "date": "2026-09-04",
+    "src": "assets/memes/we-will-not-be-stopped.jpg",
+    "caption": {
+      "en": "BREAKING: Unexpected delays at the airport ✈️ But make no mistake — NOTHING will stop us from performing for the Dutch people 🇳🇱 WE WILL NOT BE STOPPED.",
+      "nl": "BREAKING: Onverwachte vertraging op de luchthaven ✈️ Maar vergis je niet — NIETS houdt ons tegen om op te treden voor het Nederlandse volk 🇳🇱 WIJ ZIJN NIET TE STOPPEN."
+    }
+  },
+  {
     "id": "introducing-hunger-games",
     "type": "video",
     "date": "2026-09-03",
