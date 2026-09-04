@@ -1,14 +1,8 @@
 [
   {
     "date": "2026-01-17",
-    "city": {
-      "en": "Oslo 🇳🇴",
-      "nl": "Oslo 🇳🇴"
-    },
-    "venue": {
-      "en": "Brunost Arena",
-      "nl": "Brunost Arena"
-    },
+    "city": { "en": "Oslo 🇳🇴", "nl": "Oslo 🇳🇴" },
+    "venue": { "en": "Brunost Arena", "nl": "Brunost Arena" },
     "note": {
       "en": "Hometown warm-up. Brown cheese for everyone.",
       "nl": "Thuiswedstrijd als opwarmer. Bruine kaas voor iedereen."
@@ -16,14 +10,8 @@
   },
   {
     "date": "2026-02-14",
-    "city": {
-      "en": "Tokyo 🇯🇵",
-      "nl": "Tokio 🇯🇵"
-    },
-    "venue": {
-      "en": "Ramen Dome",
-      "nl": "Ramen Dome"
-    },
+    "city": { "en": "Tokyo 🇯🇵", "nl": "Tokio 🇯🇵" },
+    "venue": { "en": "Ramen Dome", "nl": "Ramen Dome" },
     "note": {
       "en": "Valentine's slurp-along. 3,000 noodles were harmed.",
       "nl": "Valentijns-slurpconcert. 3.000 noedels gesneuveld."
@@ -31,14 +19,8 @@
   },
   {
     "date": "2026-03-07",
-    "city": {
-      "en": "Buenos Aires 🇦🇷",
-      "nl": "Buenos Aires 🇦🇷"
-    },
-    "venue": {
-      "en": "Estadio Empanada",
-      "nl": "Estadio Empanada"
-    },
+    "city": { "en": "Buenos Aires 🇦🇷", "nl": "Buenos Aires 🇦🇷" },
+    "venue": { "en": "Estadio Empanada", "nl": "Estadio Empanada" },
     "note": {
       "en": "Two encores, twelve empanadas.",
       "nl": "Twee toegiften, twaalf empanada's."
@@ -46,14 +28,8 @@
   },
   {
     "date": "2026-04-01",
-    "city": {
-      "en": "Naples 🇮🇹",
-      "nl": "Napels 🇮🇹"
-    },
-    "venue": {
-      "en": "Pizzateatro San Margherita",
-      "nl": "Pizzateatro San Margherita"
-    },
+    "city": { "en": "Naples 🇮🇹", "nl": "Napels 🇮🇹" },
+    "venue": { "en": "Pizzateatro San Margherita", "nl": "Pizzateatro San Margherita" },
     "note": {
       "en": "We put pineapple on the rider. We are no longer welcome in Naples.",
       "nl": "Wij zetten ananas op de rider. We zijn niet meer welkom in Napels."
@@ -61,14 +37,8 @@
   },
   {
     "date": "2026-04-25",
-    "city": {
-      "en": "Seoul 🇰🇷",
-      "nl": "Seoel 🇰🇷"
-    },
-    "venue": {
-      "en": "Kimchi Coliseum",
-      "nl": "Kimchi Coliseum"
-    },
+    "city": { "en": "Seoul 🇰🇷", "nl": "Seoel 🇰🇷" },
+    "venue": { "en": "Kimchi Coliseum", "nl": "Kimchi Coliseum" },
     "note": {
       "en": "Spice level: final boss.",
       "nl": "Pittigheid: eindbaas."
@@ -76,14 +46,8 @@
   },
   {
     "date": "2026-05-05",
-    "city": {
-      "en": "Mexico City 🇲🇽",
-      "nl": "Mexico-Stad 🇲🇽"
-    },
-    "venue": {
-      "en": "Foro Taco",
-      "nl": "Foro Taco"
-    },
+    "city": { "en": "Mexico City 🇲🇽", "nl": "Mexico-Stad 🇲🇽" },
+    "venue": { "en": "Foro Taco", "nl": "Foro Taco" },
     "note": {
       "en": "Cinco de Mayo special. The confetti was salsa.",
       "nl": "Cinco de Mayo-special. De confetti was salsa."
@@ -91,14 +55,8 @@
   },
   {
     "date": "2026-06-13",
-    "city": {
-      "en": "Nashville 🇺🇸",
-      "nl": "Nashville 🇺🇸"
-    },
-    "venue": {
-      "en": "Grand Ole Grazing",
-      "nl": "Grand Ole Grazing"
-    },
+    "city": { "en": "Nashville 🇺🇸", "nl": "Nashville 🇺🇸" },
+    "venue": { "en": "Grand Ole Grazing", "nl": "Grand Ole Grazing" },
     "status": "cancelled",
     "note": {
       "en": "Cancelled — buffet incident. We regret nothing.",
@@ -107,14 +65,8 @@
   },
   {
     "date": "2026-07-04",
-    "city": {
-      "en": "New York 🇺🇸",
-      "nl": "New York 🇺🇸"
-    },
-    "venue": {
-      "en": "Coney Island Bandshell",
-      "nl": "Coney Island Bandshell"
-    },
+    "city": { "en": "New York 🇺🇸", "nl": "New York 🇺🇸" },
+    "venue": { "en": "Coney Island Bandshell", "nl": "Coney Island Bandshell" },
     "note": {
       "en": "Guest judges at the hot dog eating contest. Emotional.",
       "nl": "Gastjury bij de hotdog-eetwedstrijd. Emotioneel."
@@ -122,14 +74,8 @@
   },
   {
     "date": "2026-08-08",
-    "city": {
-      "en": "Reykjavík 🇮🇸",
-      "nl": "Reykjavik 🇮🇸"
-    },
-    "venue": {
-      "en": "Hot dog stand (acoustic set)",
-      "nl": "Hotdogkraam (akoestische set)"
-    },
+    "city": { "en": "Reykjavík 🇮🇸", "nl": "Reykjavik 🇮🇸" },
+    "venue": { "en": "Hot dog stand (acoustic set)", "nl": "Hotdogkraam (akoestische set)" },
     "note": {
       "en": "Intimate show. Capacity: 12.",
       "nl": "Intiem optreden. Capaciteit: 12."
@@ -137,14 +83,8 @@
   },
   {
     "date": "2026-08-22",
-    "city": {
-      "en": "Brussels 🇧🇪",
-      "nl": "Brussel 🇧🇪"
-    },
-    "venue": {
-      "en": "Frietkot Festival",
-      "nl": "Frietkot Festival"
-    },
+    "city": { "en": "Brussels 🇧🇪", "nl": "Brussel 🇧🇪" },
+    "venue": { "en": "Frietkot Festival", "nl": "Frietkot Festival" },
     "status": "soldout",
     "note": {
       "en": "Carb-loading for the finale.",
@@ -153,14 +93,8 @@
   },
   {
     "date": "2026-09-04",
-    "city": {
-      "en": "Amsterdam 🇳🇱",
-      "nl": "Amsterdam 🇳🇱"
-    },
-    "venue": {
-      "en": "Arrival & tasting tour",
-      "nl": "Aankomst & proeverij"
-    },
+    "city": { "en": "Amsterdam 🇳🇱", "nl": "Amsterdam 🇳🇱" },
+    "venue": { "en": "Arrival & tasting tour", "nl": "Aankomst & proeverij" },
     "note": {
       "en": "We arrive. We eat. We scout.",
       "nl": "We komen aan. We eten. We verkennen."
@@ -168,14 +102,8 @@
   },
   {
     "date": "2026-09-05",
-    "city": {
-      "en": "Amsterdam 🇳🇱",
-      "nl": "Amsterdam 🇳🇱"
-    },
-    "venue": {
-      "en": "Night one",
-      "nl": "Avond één"
-    },
+    "city": { "en": "Amsterdam 🇳🇱", "nl": "Amsterdam 🇳🇱" },
+    "venue": { "en": "Night one", "nl": "Avond één" },
     "note": {
       "en": "The hunt begins.",
       "nl": "De jacht begint."
@@ -183,14 +111,8 @@
   },
   {
     "date": "2026-09-06",
-    "city": {
-      "en": "Surprise NL location 🇳🇱",
-      "nl": "Geheime NL-locatie 🇳🇱"
-    },
-    "venue": {
-      "en": "???",
-      "nl": "???"
-    },
+    "city": { "en": "Surprise NL location 🇳🇱", "nl": "Geheime NL-locatie 🇳🇱" },
+    "venue": { "en": "???", "nl": "???" },
     "status": "finale",
     "note": {
       "en": "The grand finale. An epic hide-and-seek showdown, followed by an equally epic feast.",
