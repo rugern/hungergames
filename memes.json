@@ -1,5 +1,15 @@
 [
   {
+    "id": "where-is-esmee",
+    "type": "image",
+    "date": "2026-09-05",
+    "src": "assets/memes/where-is-esmee.jpg",
+    "caption": {
+      "en": "🚨 NEWS ALERT! Overeager fans have kidnapped Esmee, and we are working tirelessly to find her! Got a tip? Call the authorities on +47 815 49 300",
+      "nl": "🚨 NIEUWSALARM! Overenthousiaste fans hebben Esmee ontvoerd en wij werken keihard om haar terug te vinden! Tips? Bel de autoriteiten op +47 815 49 300"
+    }
+  },
+  {
     "id": "team-in-position",
     "type": "image",
     "date": "2026-09-04",
