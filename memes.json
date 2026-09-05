@@ -1,5 +1,15 @@
 [
   {
+    "id": "and-were-off",
+    "type": "image",
+    "date": "2026-09-05",
+    "src": "assets/memes/and-were-off.jpg",
+    "caption": {
+      "en": "READY. SET. GO! And we're off!! 🏁🍟",
+      "nl": "KLAAR VOOR DE START. AF! En daar gaan we!! 🏁🍟"
+    }
+  },
+  {
     "id": "where-is-esmee",
     "type": "image",
     "date": "2026-09-05",
