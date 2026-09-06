@@ -1,5 +1,15 @@
 [
   {
+    "id": "day-2",
+    "type": "image",
+    "date": "2026-09-06",
+    "src": "assets/memes/day-2.jpg",
+    "caption": {
+      "en": "DAY 2 ⚡ Bruised, bandaged and running on pure caffeine and snack crumbs, the sensation dragged themselves back to the start line at dawn. Insiders confirm Esmee escaped her kidnappers overnight — armed with a teddy bear and a dangerous amount of energy. Same band. Hungrier dreams. THE HUNT GOES ON 🏁",
+      "nl": "DAG 2 ⚡ Gekneusd, in het verband en draaiend op pure cafeïne en snackkruimels sleepte de sensatie zich bij zonsopgang terug naar de startlijn. Insiders bevestigen dat Esmee vannacht aan haar ontvoerders is ontsnapt — gewapend met een knuffelbeer en een gevaarlijke hoeveelheid energie. Dezelfde band. Hongerigere dromen. DE JACHT GAAT DOOR 🏁"
+    }
+  },
+  {
     "id": "and-were-off",
     "type": "image",
     "date": "2026-09-05",
