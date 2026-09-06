@@ -1,5 +1,15 @@
 [
   {
+    "id": "afterparty-exclusive",
+    "type": "image",
+    "date": "2026-09-07",
+    "src": "assets/memes/afterparty-exclusive.jpg",
+    "caption": {
+      "en": "AFTERPARTY EXCLUSIVE 🐊 After the grand finale, the sensation retreated to a safe house for croissants, nuts and celebratory beers. At midnight the doorbell rang: a crocodile in a delivery vest carrying 200 stroopwafels, riding an elephant who claimed to be 'a huge fan since the Oslo days'. PLOT TWIST: the elephant was the hiding team all along — the disguise an entire country had been searching for. The game was never over. It had only just begun.",
+      "nl": "AFTERPARTY EXCLUSIEF 🐊 Na de grote finale trok de sensatie zich terug in een safehouse voor croissants, nootjes en overwinningsbier. Om middernacht ging de bel: een krokodil in een bezorgvest met 200 stroopwafels, rijdend op een olifant die beweerde 'al fan sinds Oslo' te zijn. PLOTTWIST: de olifant was al die tijd het verstopte team — de vermomming waar een heel land naar zocht. Het spel was nooit voorbij. Het was pas net begonnen."
+    }
+  },
+  {
     "id": "elizabeth-holmes",
     "type": "image",
     "date": "2026-09-07",
