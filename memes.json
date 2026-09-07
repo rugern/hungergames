@@ -1,5 +1,15 @@
 [
   {
+    "id": "tall-motherfuckers",
+    "type": "image",
+    "date": "2026-09-07",
+    "src": "assets/memes/tall-motherfuckers.jpg",
+    "caption": {
+      "en": "POV: a completely normal conversation with these tall motherfuckers 📏",
+      "nl": "POV: een doodnormaal gesprek met deze lange motherfuckers 📏"
+    }
+  },
+  {
     "id": "afterparty-exclusive",
     "type": "image",
     "date": "2026-09-07",
